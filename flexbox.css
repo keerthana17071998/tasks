@@ -1,0 +1,70 @@
+html {
+    background-color: #fa923f;
+    padding: 10px;
+}
+
+body {
+    background-color: yellow;
+    padding: 10px;
+    margin: 0;
+}
+
+/*flexbox*/
+.parent {
+    background-color: #f073e1;
+    margin: 10px;
+    padding: 30px;
+    height: 500px;
+
+    /* This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children. */
+    display: flex;
+
+    /* This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. */
+    flex-flow: row wrap; 
+
+    /* This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis). */
+    align-items: center;
+
+    /* This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. */
+    justify-content:center;
+
+    /* This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis. */
+    align-content: flex-start;
+}
+
+.div1 {
+    background-color: #f800db;
+    margin: 5px;
+}
+
+.div2 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 150px;
+    font-size: 30px;
+}
+
+.div3 {
+    background-color: #f800db;
+    margin: 5px;
+    height: 150px;
+}
+
+.div4 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 150px;
+    height: 150px;         
+}
+
+.div5 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 200px;           
+}
+
+.div6 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 200px;
+}

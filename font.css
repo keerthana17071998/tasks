@@ -1,0 +1,21 @@
+p {
+    font-size: 1.5rem;
+    color: red;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* In the @font-face rule; first define a name for the font and then point to the font file. */
+  @font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+ }
+ 
+ @font-face {
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+ }
+ 
+ * {
+    font-family: myFirstFont;
+ }
