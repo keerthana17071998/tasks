@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+
+    /* (webkit-sticky)This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+/*(static) The element is positioned according to the normal flow of the document */
+.para1{
+    justify-content: center;
+    padding: 5px;
+    position: static;
+    background-color:yellow;
+}
+/* (relative) almost same to static ,offset relative to itself based on the values .The offset does not affect the position of any other elements*/
+.para2{
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    border: 1px solid red;
+    top: 70px;
+    right: 15px;
+}
+
+/* (absolute)The element is removed from the normal document flow, and no space is created for the element in the page layout. */
+.para4{
+    justify-content: center;
+    padding: 5px;
+    position: absolute;
+    background-color:sandybrown;
+}
+/* fixed - almost same to absolute */
+.para3{
+    justify-content: center;
+    padding: 5px;
+    position: fixed;
+    background-color:skyblue;
+}
+

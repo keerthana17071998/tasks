@@ -1,0 +1,18 @@
+p {color: red;}
+
+p.ex1 {
+    display: none;
+    background-color:yellow;
+}
+p.ex2 {
+    display: inline;
+    background-color:yellow;
+}
+p.ex3 {
+    display: block;
+    background-color:yellow;
+}
+p.ex4 {
+    display: inline-block;
+    background-color:yellow;
+}
