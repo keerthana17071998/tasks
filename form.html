@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>The form method="get" attribute</h1>
+
+    <!-- (form)- it is used to submit some information
+        attributes:action-URL that processes the form submission
+                    method- it can be either get/post
+                    get- the input will be sent to a page on the server called "action_page.php"
+                    post-Sends the form-data as an HTTP post transaction
+                    target- where to display the provided url like in the same page or in new tab etc -->
+        <form action="/action_page.php" method="get" target="_blank">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <!-- (label)
+                attribute:for-Specifies the id of the form element the label should be bound to -->
+            <label for="male">Male</label>
+            <!-- (input tag)
+                type-it defines the type of input for example text/password/button/radio etc
+                value-it specifies the value of input to be given
+                id-Specifies the label of the form element the id should be bound to-->
+            <input type="radio" name="gender" id="male" value="male"><br>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female"><br>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
